@@ -1,7 +1,88 @@
 {
   "meta": {
     "title": "Produk & Layanan",
-    "description": "Kondensat, LPG, CNG, dan rantai bisnis Migas PT Sarana Piranti Energi."
+    "description": "Kondensat, LPG, CNG, rantai bisnis Migas, dan layanan investasi PT Sarana Piranti Energi."
   },
-  "pageTitle": "Produk & Layanan"
+  "pageTitle": "Produk & Layanan",
+  "condensate": {
+    "heading": "Kondensat",
+    "subheading": "Cairan Hidrokarbon Premium dari Gas Alam",
+    "body": "Kondensat adalah cairan hidrokarbon yang terbentuk dari gas alam, terutama pada proses produksi minyak dan gas bumi. Kondensat memiliki sifat mirip bensin, yaitu mudah terbakar dan berbentuk cairan pada kondisi suhu dan tekanan normal. Kondensat memiliki berbagai kegunaan, antara lain sebagai pelarut dalam industri cat, farmasi, dan lem; bahan bakar; serta bahan baku dalam industri petrokimia.",
+    "diagramCaption": "Diagram proses: dari sumur gas melalui separator bertekanan hingga produk kondensat dan gas lean."
+  },
+  "valueChain": {
+    "heading": "Rantai Nilai Bisnis SPE",
+    "subheading": "Dari sumber gas hingga konsumen akhir",
+    "imageAlt": "Infografis rantai nilai bisnis PT Sarana Piranti Energi — 6 tahap dari eksplorasi hingga konsumen",
+    "stepsHeading": "6 Tahap Rantai Nilai",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Eksplorasi Gas",
+        "body": "Pertamina atau perusahaan swasta nasional/internasional mengekstraksi kandungan gas alam dari sumur minyak atau sumur gas."
+      },
+      {
+        "number": "02",
+        "title": "Pengolahan Gas",
+        "body": "Mengolah gas bumi dari Lapangan Migas menjadi produk-produk berupa LPG, Kondensat, dan CNG (Lean Gas)."
+      },
+      {
+        "number": "03",
+        "title": "Transportasi",
+        "body": "Distribusi produk dari fasilitas pengolahan menuju titik-titik distribusi dan penyimpanan menggunakan armada tangki khusus."
+      },
+      {
+        "number": "04",
+        "title": "Splitter LPG",
+        "body": "Distilasi: memisahkan fraksi campuran LPG yang belum stabil menjadi komponen lebih ringan, menghasilkan Butane & Propane."
+      },
+      {
+        "number": "05",
+        "title": "Stasiun Pengisian LPG (SPBE)",
+        "body": "Stasiun Pengisian Bulk Elpiji — sarana khusus perpanjangan dari Pertamina (Persero) untuk menyalurkan LPG ke masyarakat."
+      },
+      {
+        "number": "06",
+        "title": "Konsumen",
+        "body": "Produk gas bumi sampai ke tangan konsumen akhir: rumah tangga, industri, dan sektor komersial di seluruh Indonesia."
+      }
+    ]
+  },
+  "services": {
+    "heading": "Layanan Bisnis",
+    "subheading": "Lebih dari sekadar niaga produk",
+    "items": [
+      {
+        "key": "trading",
+        "title": "Niaga Produk Migas",
+        "body": "Jual-beli Kondensat, LPG, dan CNG sebagai pelaku utama pasar niaga minyak dan gas bumi di Indonesia."
+      },
+      {
+        "key": "investment",
+        "title": "Investasi & Kemitraan",
+        "body": "Mendukung perusahaan Migas sebagai investor strategis dalam pengembangan proyek dan fasilitas gas bumi."
+      },
+      {
+        "key": "contracting",
+        "title": "Jasa Kontraktor",
+        "body": "Layanan kontraktor untuk pemeliharaan fasilitas, konstruksi infrastruktur, serta IT dan jaringan pendukung operasional Migas."
+      },
+      {
+        "key": "storage",
+        "title": "Penyimpanan",
+        "body": "Fasilitas storage kondensat di Bojonegoro, Jawa Timur — tiga tangki kapasitas 25 kL masing-masing, milik sendiri."
+      }
+    ]
+  },
+  "futurePlans": {
+    "heading": "Rencana Pengembangan",
+    "badge": "Segera",
+    "title": "Pengolahan LPG & CNG",
+    "body": "SPE merencanakan pembangunan fasilitas pengolahan LPG dan CNG sebagai langkah strategis dari perusahaan niaga menuju perusahaan produksi terintegrasi. Investasi ini akan memperkuat posisi SPE di rantai nilai industri gas bumi Indonesia.",
+    "items": [
+      "Fasilitas splitter LPG untuk produksi Butane & Propane",
+      "Stasiun pengisian CNG untuk distribusi gas terkompresi",
+      "Integrasi vertikal dari niaga ke produksi"
+    ]
+  }
 }

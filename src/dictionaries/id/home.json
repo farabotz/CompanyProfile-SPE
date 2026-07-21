@@ -3,5 +3,69 @@
     "title": "Beranda",
     "description": "PT Sarana Piranti Energi (SPE) — mitra terpercaya industri Minyak dan Gas Bumi Indonesia, bergerak di bidang niaga dan pengelolaan Kondensat, LPG, dan CNG."
   },
-  "pageTitle": "Beranda"
+  "pageTitle": "Beranda",
+  "hero": {
+    "headline": "Mitra Terpercaya Industri Migas Indonesia",
+    "tagline": "PT Sarana Piranti Energi bergerak di bidang niaga, penyimpanan, dan pengelolaan Kondensat, LPG, dan CNG.",
+    "ctaProducts": "Produk & Layanan",
+    "ctaContact": "Hubungi Kami"
+  },
+  "aboutSnippet": {
+    "heading": "Tentang Kami",
+    "text": "Didirikan pada awal 2023, PT Sarana Piranti Energi (SPE) menggabungkan keahlian teknologi dan jaringan dari PT Step Point Indonesia dengan pengalaman panjang praktisi industri gas — mulai dari teknik, penjualan, hingga investasi. Kami kini terjun langsung dalam penjualan, produksi, dan pengembangan di sektor minyak dan gas bumi.",
+    "linkLabel": "Selengkapnya"
+  },
+  "visionMission": {
+    "heading": "Visi & Misi",
+    "visionTitle": "Visi",
+    "visionText": "Menjadi perusahaan yang terbaik dalam Bidang Migas dan Pengelolaannya.",
+    "missionTitle": "Misi",
+    "missionText": "Selalu meningkatkan Pelayanan dan produktivitas yang tinggi didalam semua kegiatan."
+  },
+  "productsOverview": {
+    "heading": "Produk Kami",
+    "items": [
+      {
+        "key": "condensate",
+        "title": "Kondensat",
+        "description": "Cairan hidrokarbon bernilai tinggi dari proses produksi gas alam — bahan baku petrokimia, bahan bakar, dan pelarut industri."
+      },
+      {
+        "key": "lpg",
+        "title": "LPG",
+        "description": "Liquefied Petroleum Gas: Butane & Propane hasil distilasi splitter LPG — energi bersih untuk rumah tangga dan industri (dalam tahap pengembangan)."
+      },
+      {
+        "key": "cng",
+        "title": "CNG",
+        "description": "Compressed Natural Gas: alternatif bahan bakar ramah lingkungan — fasilitas pengolahan CNG sedang direncanakan untuk masa depan."
+      }
+    ]
+  },
+  "processTeaser": {
+    "heading": "Rantai Bisnis Migas Kami",
+    "body": "Dari eksplorasi gas hingga konsumen akhir — SPE hadir di setiap tahap rantai nilai industri minyak dan gas bumi.",
+    "linkLabel": "Lihat Detail Produk & Layanan"
+  },
+  "trustBadges": {
+    "heading": "Legalitas & Kredensial",
+    "labels": {
+      "aktaNotaris": "Akta Notaris",
+      "menkumham": "SK Kemenkumham",
+      "nib": "NIB Terdaftar",
+      "izinNiagaMigas": "Izin Niaga Migas"
+    },
+    "validUntil": "Berlaku s.d."
+  },
+  "partners": {
+    "heading": "Mitra Bisnis",
+    "supplierLabel": "Pemasok",
+    "buyerLabel": "Mitra Pembeli",
+    "disclaimer": "Hubungan yang ditampilkan adalah hubungan niaga (jual-beli), bukan joint venture atau endorsement formal."
+  },
+  "ctaBanner": {
+    "heading": "Siap Bermitra dengan SPE?",
+    "body": "Hubungi tim kami untuk informasi lebih lanjut mengenai produk, layanan, dan peluang kerjasama.",
+    "button": "Hubungi Kami"
+  }
 }

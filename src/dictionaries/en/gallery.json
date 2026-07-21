@@ -1,7 +1,35 @@
 {
   "meta": {
     "title": "Gallery",
-    "description": "Photo documentation of storage activity, fleet, and facilities of PT Sarana Piranti Energi."
+    "description": "Visual documentation of storage activities, tanker fleet, and facilities of PT Sarana Piranti Energi in Bojonegoro and Jakarta."
   },
-  "pageTitle": "Gallery"
+  "pageTitle": "Gallery",
+  "intro": "Visual documentation of operational activities, tanker fleet, and storage facilities of PT Sarana Piranti Energi.",
+  "filter": {
+    "all": "All",
+    "storage": "Storage & Facilities",
+    "fleet": "Tanker Fleet"
+  },
+  "lightbox": {
+    "close": "Close",
+    "prev": "Previous",
+    "next": "Next",
+    "imageOf": "Image"
+  },
+  "captions": {
+    "controlRoom": "SCADA control room, Bojonegoro storage facility",
+    "isoTankLoading": "ISO tank condensate filling process at Bojonegoro storage",
+    "isoTankInspection": "ISO tank inspection prior to shipment",
+    "tankTopInspection": "Inspection from the top of the condensate storage tank",
+    "hoseFilling": "Operations staff performing tank hose filling",
+    "storageYardTrucks": "Tanker fleet lined up at the Bojonegoro storage yard",
+    "storageYardEmpty": "Bojonegoro storage yard ready for operations",
+    "storageYardWide": "Wide-angle view of the Bojonegoro condensate storage facility",
+    "tankerRoad": "SPE tanker truck en route for distribution on the highway",
+    "yardCollage": "Fleet activity collage at the SPE yard",
+    "parkedPair": "Two tanker trucks parked at the operational area",
+    "hinoWorker": "SPE staff with a Hino tanker truck ready for operations",
+    "hinoNight": "SPE Hino tanker fleet at night",
+    "workerDusk": "SPE operations staff at dusk"
+  }
 }

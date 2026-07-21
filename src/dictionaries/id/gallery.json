@@ -1,7 +1,35 @@
 {
   "meta": {
     "title": "Galeri",
-    "description": "Dokumentasi aktivitas storage, armada, dan fasilitas PT Sarana Piranti Energi."
+    "description": "Dokumentasi aktivitas storage, armada, dan fasilitas PT Sarana Piranti Energi di Bojonegoro dan Jakarta."
   },
-  "pageTitle": "Galeri"
+  "pageTitle": "Galeri",
+  "intro": "Dokumentasi visual kegiatan operasional, armada tangki, dan fasilitas penyimpanan PT Sarana Piranti Energi.",
+  "filter": {
+    "all": "Semua",
+    "storage": "Storage & Fasilitas",
+    "fleet": "Armada Tangki"
+  },
+  "lightbox": {
+    "close": "Tutup",
+    "prev": "Sebelumnya",
+    "next": "Berikutnya",
+    "imageOf": "Foto"
+  },
+  "captions": {
+    "controlRoom": "Ruang kontrol SCADA fasilitas storage Bojonegoro",
+    "isoTankLoading": "Proses pengisian ISO tank kondensat di storage Bojonegoro",
+    "isoTankInspection": "Inspeksi ISO tank sebelum pengiriman",
+    "tankTopInspection": "Inspeksi dari atas tangki penyimpanan kondensat",
+    "hoseFilling": "Petugas operasional melakukan pengisian melalui selang tangki",
+    "storageYardTrucks": "Armada tangki berjejer di area storage Bojonegoro",
+    "storageYardEmpty": "Area storage Bojonegoro dalam kondisi siap operasi",
+    "storageYardWide": "Pandangan luas fasilitas storage kondensat Bojonegoro",
+    "tankerRoad": "Truk tangki SPE dalam perjalanan distribusi di jalan raya",
+    "yardCollage": "Kolase aktivitas armada di area yard SPE",
+    "parkedPair": "Dua unit truk tangki parkir di area operasional",
+    "hinoWorker": "Petugas SPE bersama truk tangki Hino siap beroperasi",
+    "hinoNight": "Armada truk tangki Hino SPE saat malam hari",
+    "workerDusk": "Petugas operasional SPE di senja hari"
+  }
 }

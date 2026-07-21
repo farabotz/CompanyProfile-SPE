@@ -1,7 +1,80 @@
 {
   "meta": {
     "title": "Tentang Kami",
-    "description": "Profil, visi misi, legalitas, dan lokasi PT Sarana Piranti Energi."
+    "description": "Profil, visi misi, legalitas, kepemimpinan, dan lokasi PT Sarana Piranti Energi."
   },
-  "pageTitle": "Tentang Kami"
+  "pageTitle": "Tentang Kami",
+  "narrative": {
+    "heading": "Profil Perusahaan",
+    "body": "Berawal dari PT. Step Point Indonesia yang berpengalaman dalam bidang Kontraktor, Teknologi Informasi, Jaringan dan ME bekerja sama dengan praktisi yang berpengalaman di bidang Gas baik teknik, sales dan investasi, pada awal Tahun 2023 membuat perusahaan yang bergerak di bidang Gas dan yang berhubungan dengannya. Dengan nama PT. Sarana Piranti Energi. Selama ini kami hanya mendukung perusahaan perusahaan yang bergerak di bidang minyak dan Gas sebagai Investor dan kontraktor dalam penjualan/pembelian produk, perawatan dan pembangunan fasilitas. Dan saat ini kami terjun langsung di bisnis ini, baik di bidang penjualan, produksi dan pengembangan seperti sudah direncana ke depan akan memulai Pembuatan Pengolahan LPG dan CNG."
+  },
+  "visionMission": {
+    "heading": "Visi & Misi",
+    "visionTitle": "Visi",
+    "visionText": "Menjadi perusahaan yang terbaik dalam Bidang Migas dan Pengelolaannya.",
+    "missionTitle": "Misi",
+    "missionText": "Selalu meningkatkan Pelayanan dan produktivitas yang tinggi didalam semua kegiatan."
+  },
+  "milestones": {
+    "heading": "Tonggak Sejarah",
+    "items": [
+      {
+        "year": "2023",
+        "month": "Februari",
+        "title": "Pendirian Perusahaan",
+        "body": "PT Sarana Piranti Energi resmi didirikan melalui Akta Notaris No. 1 pada 13 Februari 2023, hasil sinergi antara PT Step Point Indonesia dengan praktisi industri gas nasional."
+      },
+      {
+        "year": "2023",
+        "month": "Maret",
+        "title": "Pendaftaran NIB",
+        "body": "Nomor Induk Berusaha (NIB) diterbitkan melalui sistem OSS-RBA Kementerian Investasi/BKPM, menandai dimulainya operasional resmi perusahaan."
+      },
+      {
+        "year": "2025",
+        "month": "September",
+        "title": "Izin Niaga Migas",
+        "body": "Memperoleh Izin Usaha Niaga Minyak dan Gas Bumi dari Kementerian Investasi dan Hilirisasi/BKPM, berlaku hingga 10 September 2027."
+      },
+      {
+        "year": "Mendatang",
+        "month": "",
+        "title": "Rencana Pengolahan LPG & CNG",
+        "body": "SPE merencanakan pembangunan fasilitas pengolahan LPG dan CNG untuk memperluas portofolio bisnis dari niaga ke produksi."
+      }
+    ]
+  },
+  "legalitas": {
+    "heading": "Legalitas",
+    "credentialLabels": {
+      "aktaNotaris": "Akta Notaris",
+      "menkumham": "SK Kemenkumham",
+      "nib": "Nomor Induk Berusaha (NIB)",
+      "izinNiagaMigas": "Izin Usaha Niaga Migas"
+    },
+    "numberLabel": "Nomor",
+    "dateLabel": "Tanggal",
+    "issuerLabel": "Penerbit",
+    "validUntilLabel": "Berlaku s.d.",
+    "kbliLabel": "KBLI (Klasifikasi Baku Lapangan Usaha)",
+    "storageLabel": "Fasilitas Penyimpanan",
+    "storageLocation": "Dander, Bojonegoro, Jawa Timur",
+    "storageOwnership": "Milik Sendiri",
+    "storageTankLabel": "Tangki",
+    "storageCapacityUnit": "kL"
+  },
+  "leadership": {
+    "heading": "Kepemimpinan",
+    "roleLabels": {
+      "direkturUtama": "Direktur Utama",
+      "direktur": "Direktur",
+      "komisarisUtama": "Komisaris Utama",
+      "komisaris": "Komisaris"
+    }
+  },
+  "locations": {
+    "heading": "Lokasi Kami",
+    "headOfficeLabel": "Kantor Pusat",
+    "storageLabel": "Storage Bojonegoro"
+  }
 }

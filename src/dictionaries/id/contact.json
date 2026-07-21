@@ -1,7 +1,44 @@
 {
   "meta": {
     "title": "Kontak",
-    "description": "Hubungi PT Sarana Piranti Energi — kantor pusat Jakarta dan storage Bojonegoro."
+    "description": "Hubungi PT Sarana Piranti Energi — kantor pusat Jakarta Selatan dan fasilitas storage Bojonegoro."
   },
-  "pageTitle": "Kontak"
+  "pageTitle": "Kontak",
+  "intro": "Kami senang mendengar dari Anda. Hubungi tim SPE untuk pertanyaan produk, layanan, atau peluang kerjasama.",
+  "locations": {
+    "heading": "Lokasi Kami",
+    "headOfficeLabel": "Kantor Pusat",
+    "storageLabel": "Storage Bojonegoro"
+  },
+  "form": {
+    "heading": "Kirim Pesan",
+    "notice": "Tombol kirim akan membuka aplikasi email Anda dengan pesan yang telah terisi — pesan tidak dikirim langsung dari halaman ini.",
+    "fields": {
+      "name": {
+        "label": "Nama Lengkap",
+        "placeholder": "Nama Anda"
+      },
+      "email": {
+        "label": "Alamat Email",
+        "placeholder": "email@anda.com"
+      },
+      "subject": {
+        "label": "Subjek",
+        "placeholder": "Topik pesan Anda"
+      },
+      "message": {
+        "label": "Pesan",
+        "placeholder": "Tuliskan pesan Anda di sini..."
+      }
+    },
+    "errors": {
+      "nameRequired": "Nama wajib diisi.",
+      "emailRequired": "Email wajib diisi.",
+      "emailInvalid": "Format email tidak valid.",
+      "subjectRequired": "Subjek wajib diisi.",
+      "messageRequired": "Pesan wajib diisi."
+    },
+    "submitButton": "Kirim via Email",
+    "recipientEmail": "info@saranapirantienergi.com"
+  }
 }
