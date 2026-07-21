@@ -3,5 +3,69 @@
     "title": "Home",
     "description": "PT Sarana Piranti Energi (SPE) — a trusted partner for Indonesia's Oil & Gas industry, engaged in trading and management of Condensate, LPG, and CNG."
   },
-  "pageTitle": "Home"
+  "pageTitle": "Home",
+  "hero": {
+    "headline": "Trusted Partner for Indonesia's Oil & Gas Industry",
+    "tagline": "PT Sarana Piranti Energi is engaged in the trading, storage, and management of Condensate, LPG, and CNG.",
+    "ctaProducts": "Products & Services",
+    "ctaContact": "Contact Us"
+  },
+  "aboutSnippet": {
+    "heading": "About Us",
+    "text": "Founded in early 2023, PT Sarana Piranti Energi (SPE) combines the technology and networking expertise of PT Step Point Indonesia with the deep experience of gas-industry practitioners in engineering, sales, and investment. We now participate directly in the sales, production, and development of Indonesia's oil and gas sector.",
+    "linkLabel": "Learn More"
+  },
+  "visionMission": {
+    "heading": "Vision & Mission",
+    "visionTitle": "Vision",
+    "visionText": "To become the best company in the Oil & Gas field and its management.",
+    "missionTitle": "Mission",
+    "missionText": "To continuously improve service and high productivity in all activities."
+  },
+  "productsOverview": {
+    "heading": "Our Products",
+    "items": [
+      {
+        "key": "condensate",
+        "title": "Condensate",
+        "description": "High-value hydrocarbon liquid from natural gas production — a key raw material for petrochemicals, fuel, and industrial solvents."
+      },
+      {
+        "key": "lpg",
+        "title": "LPG",
+        "description": "Liquefied Petroleum Gas: Butane & Propane produced through an LPG splitter — clean energy for households and industry (in development)."
+      },
+      {
+        "key": "cng",
+        "title": "CNG",
+        "description": "Compressed Natural Gas: an environmentally friendly fuel alternative — CNG processing facilities are planned for future development."
+      }
+    ]
+  },
+  "processTeaser": {
+    "heading": "Our Oil & Gas Value Chain",
+    "body": "From gas exploration to the end consumer — SPE is present at every stage of the oil and gas industry value chain.",
+    "linkLabel": "See Products & Services Detail"
+  },
+  "trustBadges": {
+    "heading": "Legal Credentials",
+    "labels": {
+      "aktaNotaris": "Notarial Deed",
+      "menkumham": "MoLHR Decree",
+      "nib": "Registered NIB",
+      "izinNiagaMigas": "Oil & Gas Trading License"
+    },
+    "validUntil": "Valid until"
+  },
+  "partners": {
+    "heading": "Business Partners",
+    "supplierLabel": "Supplier",
+    "buyerLabel": "Buyer Partners",
+    "disclaimer": "Relationships shown are trading (buy/sell) relationships, not joint ventures or formal endorsements."
+  },
+  "ctaBanner": {
+    "heading": "Ready to Partner with SPE?",
+    "body": "Contact our team for more information about our products, services, and collaboration opportunities.",
+    "button": "Contact Us"
+  }
 }

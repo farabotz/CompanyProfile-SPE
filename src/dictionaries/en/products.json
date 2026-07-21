@@ -1,7 +1,88 @@
 {
   "meta": {
     "title": "Products & Services",
-    "description": "Condensate, LPG, CNG, and the Oil & Gas value chain of PT Sarana Piranti Energi."
+    "description": "Condensate, LPG, CNG, oil & gas value chain, and investment services of PT Sarana Piranti Energi."
   },
-  "pageTitle": "Products & Services"
+  "pageTitle": "Products & Services",
+  "condensate": {
+    "heading": "Condensate",
+    "subheading": "Premium Hydrocarbon Liquid from Natural Gas",
+    "body": "Condensate is a hydrocarbon liquid formed from natural gas, primarily during oil and gas production processes. Condensate has properties similar to gasoline — it is flammable and liquid at normal temperature and pressure conditions. Condensate has various uses, including as a solvent in the paint, pharmaceutical, and adhesive industries; as fuel; and as a raw material in the petrochemical industry.",
+    "diagramCaption": "Process diagram: from gas wells through pressure separators to condensate product and lean gas."
+  },
+  "valueChain": {
+    "heading": "SPE Business Value Chain",
+    "subheading": "From gas source to end consumer",
+    "imageAlt": "PT Sarana Piranti Energi value chain infographic — 6 stages from exploration to consumer",
+    "stepsHeading": "6 Value Chain Stages",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Gas Exploration",
+        "body": "Pertamina or national/international private companies extract natural gas from oil wells or gas wells."
+      },
+      {
+        "number": "02",
+        "title": "Gas Processing",
+        "body": "Processing natural gas from oil & gas fields into products: LPG, Condensate, and CNG (Lean Gas)."
+      },
+      {
+        "number": "03",
+        "title": "Transportation",
+        "body": "Distribution of products from processing facilities to distribution and storage points using specialized tanker fleets."
+      },
+      {
+        "number": "04",
+        "title": "LPG Splitter",
+        "body": "Distillation: separating unstable LPG mixture fractions into lighter components, producing Butane & Propane."
+      },
+      {
+        "number": "05",
+        "title": "LPG Filling Station (SPBE)",
+        "body": "Bulk LPG Filling Station — a dedicated extension of Pertamina (Persero) to distribute LPG to the public."
+      },
+      {
+        "number": "06",
+        "title": "Consumer",
+        "body": "Natural gas products reach end consumers: households, industries, and commercial sectors across Indonesia."
+      }
+    ]
+  },
+  "services": {
+    "heading": "Business Services",
+    "subheading": "More than just product trading",
+    "items": [
+      {
+        "key": "trading",
+        "title": "Oil & Gas Product Trading",
+        "body": "Buying and selling Condensate, LPG, and CNG as a primary player in Indonesia's oil and gas trading market."
+      },
+      {
+        "key": "investment",
+        "title": "Investment & Partnerships",
+        "body": "Supporting Oil & Gas companies as a strategic investor in the development of gas projects and facilities."
+      },
+      {
+        "key": "contracting",
+        "title": "Contracting Services",
+        "body": "Contractor services for facility maintenance, infrastructure construction, as well as IT and network support for oil & gas operations."
+      },
+      {
+        "key": "storage",
+        "title": "Storage",
+        "body": "Condensate storage facility in Bojonegoro, East Java — three tanks at 25 kL capacity each, self-owned."
+      }
+    ]
+  },
+  "futurePlans": {
+    "heading": "Development Plans",
+    "badge": "Coming Soon",
+    "title": "LPG & CNG Processing",
+    "body": "SPE plans to build LPG and CNG processing facilities as a strategic step from a trading company toward an integrated production company. This investment will strengthen SPE's position in Indonesia's natural gas industry value chain.",
+    "items": [
+      "LPG splitter facility for Butane & Propane production",
+      "CNG filling station for compressed gas distribution",
+      "Vertical integration from trading to production"
+    ]
+  }
 }

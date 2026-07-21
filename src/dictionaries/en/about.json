@@ -1,7 +1,80 @@
 {
   "meta": {
     "title": "About Us",
-    "description": "Company profile, vision & mission, legal credentials, and locations of PT Sarana Piranti Energi."
+    "description": "Company profile, vision and mission, legal credentials, leadership, and locations of PT Sarana Piranti Energi."
   },
-  "pageTitle": "About Us"
+  "pageTitle": "About Us",
+  "narrative": {
+    "heading": "Company Profile",
+    "body": "Starting from PT Step Point Indonesia, experienced in the fields of Contracting, Information Technology, Networking and Mechanical & Electrical, collaborating with experienced practitioners in the Gas industry covering engineering, sales, and investment — in early 2023 we established a company operating in the Gas sector and related fields: PT Sarana Piranti Energi. We have long supported Oil & Gas companies as investors and contractors in product trading, facility maintenance, and facility construction. Today, we are directly involved in this business — in sales, production, and development — with plans to begin building LPG and CNG processing facilities in the future."
+  },
+  "visionMission": {
+    "heading": "Vision & Mission",
+    "visionTitle": "Vision",
+    "visionText": "To become the best company in the Oil & Gas field and its management.",
+    "missionTitle": "Mission",
+    "missionText": "To continuously improve service and high productivity in all activities."
+  },
+  "milestones": {
+    "heading": "Milestones",
+    "items": [
+      {
+        "year": "2023",
+        "month": "February",
+        "title": "Company Established",
+        "body": "PT Sarana Piranti Energi was officially established via Notarial Deed No. 1 on 13 February 2023, born from the synergy between PT Step Point Indonesia and national gas-industry practitioners."
+      },
+      {
+        "year": "2023",
+        "month": "March",
+        "title": "NIB Registration",
+        "body": "The Business Identification Number (NIB) was issued through the OSS-RBA system of the Ministry of Investment/BKPM, marking the start of official company operations."
+      },
+      {
+        "year": "2025",
+        "month": "September",
+        "title": "Oil & Gas Trading License",
+        "body": "Obtained an Oil & Gas Trading Business License from the Ministry of Investment and Downstream/BKPM, valid until 10 September 2027."
+      },
+      {
+        "year": "Future",
+        "month": "",
+        "title": "LPG & CNG Processing Plans",
+        "body": "SPE plans to build LPG and CNG processing facilities to expand its business portfolio from trading into production."
+      }
+    ]
+  },
+  "legalitas": {
+    "heading": "Legal Credentials",
+    "credentialLabels": {
+      "aktaNotaris": "Notarial Deed",
+      "menkumham": "MoLHR Ministerial Decree",
+      "nib": "Business Identification Number (NIB)",
+      "izinNiagaMigas": "Oil & Gas Trading License"
+    },
+    "numberLabel": "Number",
+    "dateLabel": "Date",
+    "issuerLabel": "Issuer",
+    "validUntilLabel": "Valid until",
+    "kbliLabel": "KBLI (Business Classification Codes)",
+    "storageLabel": "Storage Facilities",
+    "storageLocation": "Dander, Bojonegoro, East Java",
+    "storageOwnership": "Self-owned",
+    "storageTankLabel": "Tank",
+    "storageCapacityUnit": "kL"
+  },
+  "leadership": {
+    "heading": "Leadership",
+    "roleLabels": {
+      "direkturUtama": "President Director",
+      "direktur": "Director",
+      "komisarisUtama": "President Commissioner",
+      "komisaris": "Commissioner"
+    }
+  },
+  "locations": {
+    "heading": "Our Locations",
+    "headOfficeLabel": "Head Office",
+    "storageLabel": "Bojonegoro Storage"
+  }
 }
