@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fafaf9;
+  --foreground: #1f2937;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-jakarta);
+}
+
+@theme {
+  /* Brand palette sampled directly from the official logo/photo assets
+     (see scripts/extract-images.py) — do not eyeball-adjust without re-sampling. */
+  --color-brand-orange: #e7571b;
+  --color-brand-orange-light: #f2915c;
+  --color-brand-orange-dark: #b8430f;
+  --color-brand-teal: #3e6972;
+  --color-brand-teal-dark: #28444a;
+  --color-brand-green: #169544;
+  --color-neutral-muted: #6b7280;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brand-orange);
+  outline-offset: 2px;
+}

@@ -1,0 +1,42 @@
+{
+  "site": {
+    "name": "Sarana Piranti Energi",
+    "legalName": "PT Sarana Piranti Energi",
+    "titleSuffix": "PT Sarana Piranti Energi",
+    "defaultDescription": "PT Sarana Piranti Energi (SPE) is an Indonesian Oil & Gas company engaged in trading, storage, and management of Condensate, LPG, and CNG."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products & Services",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "cta": {
+    "contactUs": "Contact Us",
+    "learnMore": "Learn More",
+    "viewAll": "View All"
+  },
+  "footer": {
+    "tagline": "A trusted partner for Indonesia's Oil & Gas industry.",
+    "addressHeading": "Address",
+    "headOfficeLabel": "Head Office",
+    "storageLabel": "Storage",
+    "quickLinksHeading": "Quick Links",
+    "languageHeading": "Language",
+    "rights": "All rights reserved."
+  },
+  "languageToggle": {
+    "id": "ID",
+    "en": "EN",
+    "label": "Switch Language"
+  },
+  "mobileNav": {
+    "open": "Open menu",
+    "close": "Close menu"
+  },
+  "comingSoon": {
+    "badge": "Coming Soon",
+    "body": "This page is currently under development and will be completed soon."
+  }
+}

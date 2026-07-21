@@ -1,0 +1,42 @@
+{
+  "site": {
+    "name": "Sarana Piranti Energi",
+    "legalName": "PT Sarana Piranti Energi",
+    "titleSuffix": "PT Sarana Piranti Energi",
+    "defaultDescription": "PT Sarana Piranti Energi (SPE) adalah perusahaan Migas Indonesia yang bergerak di bidang niaga, penyimpanan, dan pengelolaan Kondensat, LPG, dan CNG."
+  },
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang Kami",
+    "products": "Produk & Layanan",
+    "gallery": "Galeri",
+    "contact": "Kontak"
+  },
+  "cta": {
+    "contactUs": "Hubungi Kami",
+    "learnMore": "Selengkapnya",
+    "viewAll": "Lihat Semua"
+  },
+  "footer": {
+    "tagline": "Mitra terpercaya industri Minyak dan Gas Bumi Indonesia.",
+    "addressHeading": "Alamat",
+    "headOfficeLabel": "Kantor Pusat",
+    "storageLabel": "Storage",
+    "quickLinksHeading": "Tautan Cepat",
+    "languageHeading": "Bahasa",
+    "rights": "Seluruh hak cipta dilindungi undang-undang."
+  },
+  "languageToggle": {
+    "id": "ID",
+    "en": "EN",
+    "label": "Ganti Bahasa"
+  },
+  "mobileNav": {
+    "open": "Buka menu",
+    "close": "Tutup menu"
+  },
+  "comingSoon": {
+    "badge": "Segera Hadir",
+    "body": "Halaman ini sedang dalam pengembangan dan akan segera dilengkapi."
+  }
+}
