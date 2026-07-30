@@ -33,17 +33,6 @@ export function HeroSection({
       {/* Content */}
       <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-24 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
-          {/* Logo mark */}
-          <div className="mb-8 inline-flex items-center gap-3">
-            <Image
-              src="/images/logo/logo-mark.png"
-              alt="PT Sarana Piranti Energi"
-              width={56}
-              height={56}
-              className="drop-shadow-lg"
-            />
-          </div>
-
           {/* Headline */}
           <h1 className="font-heading text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
             {headline}
