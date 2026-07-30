@@ -13,8 +13,8 @@
 }
 
 @theme {
-  /* Brand palette sampled directly from the official logo/photo assets
-     (see scripts/extract-images.py) — do not eyeball-adjust without re-sampling. */
+    /* Brand palette sampled directly from the official logo/photo assets
+      (see scripts/extract-images.py) - do not eyeball-adjust without re-sampling. */
   --color-brand-orange: #e7571b;
   --color-brand-orange-light: #f2915c;
   --color-brand-orange-dark: #b8430f;

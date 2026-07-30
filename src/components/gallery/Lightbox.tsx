@@ -59,7 +59,7 @@ export function Lightbox({ images, captions, initialIndex, onClose, dict }: Ligh
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
       onClick={onClose}
     >
-      {/* Inner container — stop click propagation so clicking the image doesn't close */}
+      {/* Inner container - stop click propagation so clicking the image doesn't close */}
       <div
         className="relative flex max-h-full max-w-5xl w-full flex-col items-center gap-4"
         onClick={(e) => e.stopPropagation()}

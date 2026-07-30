@@ -7,13 +7,13 @@
   "condensate": {
     "heading": "Condensate",
     "subheading": "Premium Hydrocarbon Liquid from Natural Gas",
-    "body": "Condensate is a hydrocarbon liquid formed from natural gas, primarily during oil and gas production processes. Condensate has properties similar to gasoline — it is flammable and liquid at normal temperature and pressure conditions. Condensate has various uses, including as a solvent in the paint, pharmaceutical, and adhesive industries; as fuel; and as a raw material in the petrochemical industry.",
+    "body": "Condensate is a hydrocarbon liquid formed from natural gas, primarily during oil and gas production processes. Condensate has properties similar to gasoline - it is flammable and liquid at normal temperature and pressure conditions. Condensate has various uses, including as a solvent in the paint, pharmaceutical, and adhesive industries; as fuel; and as a raw material in the petrochemical industry.",
     "diagramCaption": "Process diagram: from gas wells through pressure separators to condensate product and lean gas."
   },
   "valueChain": {
     "heading": "SPE Business Value Chain",
     "subheading": "From gas source to end consumer",
-    "imageAlt": "PT Sarana Piranti Energi value chain infographic — 6 stages from exploration to consumer",
+    "imageAlt": "PT Sarana Piranti Energi value chain infographic - 6 stages from exploration to consumer",
     "stepsHeading": "6 Value Chain Stages",
     "steps": [
       {
@@ -39,7 +39,7 @@
       {
         "number": "05",
         "title": "LPG Filling Station (SPBE)",
-        "body": "Bulk LPG Filling Station — a dedicated extension of Pertamina (Persero) to distribute LPG to the public."
+        "body": "Bulk LPG Filling Station - a dedicated extension of Pertamina (Persero) to distribute LPG to the public."
       },
       {
         "number": "06",
@@ -70,7 +70,7 @@
       {
         "key": "storage",
         "title": "Storage",
-        "body": "Condensate storage facility in Bojonegoro, East Java — three tanks at 25 kL capacity each, self-owned."
+        "body": "Condensate storage facility in Bojonegoro, East Java - three tanks at 25 kL capacity each, self-owned."
       }
     ]
   },

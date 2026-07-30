@@ -22,7 +22,7 @@ export async function generateMetadata({
   if (!isLocale(locale)) return {};
   const dict = await getDictionary(locale);
   return {
-    title: `${dict.common.site.name} — ${dict.common.site.titleSuffix}`,
+    title: `${dict.common.site.name} - ${dict.common.site.titleSuffix}`,
     description: dict.home.meta.description,
   };
 }

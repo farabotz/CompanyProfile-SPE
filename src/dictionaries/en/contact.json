@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Contact",
-    "description": "Contact PT Sarana Piranti Energi — head office in South Jakarta and Bojonegoro storage facility."
+    "description": "Contact PT Sarana Piranti Energi - head office in South Jakarta and Bojonegoro storage facility."
   },
   "pageTitle": "Contact",
   "intro": "We'd love to hear from you. Contact the SPE team for product inquiries, services, or collaboration opportunities.",
@@ -12,7 +12,7 @@
   },
   "form": {
     "heading": "Send a Message",
-    "notice": "The send button will open your email application with a pre-filled message — the message is not sent directly from this page.",
+    "notice": "The send button will open your email application with a pre-filled message - the message is not sent directly from this page.",
     "fields": {
       "name": {
         "label": "Full Name",
