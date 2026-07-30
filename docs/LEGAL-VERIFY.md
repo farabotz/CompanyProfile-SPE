@@ -2,11 +2,11 @@ Please verify the leadership names and any OCR'd text before publishing.
 
 Files to check:
 
-- `src/lib/content/legal.ts` — leadership array and OCR note.
+ - `src/lib/content/legal.ts` - leadership array and OCR note.
 
 Current leadership entries (please confirm exact spellings and titles):
 
-- Dedy Setiawan (direkturUtama) — OCR note suggests this may be "CEDI SETIAWAN" in the scan; confirm.
+- Dedy Setiawan (direkturUtama) - OCR note suggests this may be "CEDI SETIAWAN" in the scan; confirm.
 - Fredy Handoko Trisnawan (direktur)
 - Dewantoro Wibisono H. (komisarisUtama)
 - Ir. Fitra (komisaris)

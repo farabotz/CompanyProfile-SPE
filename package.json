@@ -2,11 +2,14 @@
   "name": "sarana-piranti-energi-website",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "taste:preflight": "node scripts/taste-preflight.js",
+    "taste:fix-emdash": "node scripts/replace-emdash.js"
   },
   "dependencies": {
     "lucide-react": "^1.25.0",

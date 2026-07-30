@@ -3,12 +3,12 @@
  * "Company Profile SPE 2026.pdf" pages 12-16.
  *
  * Policy (user-confirmed): never embed the scanned certificate images on the
- * public site — they show NPWP numbers and signatures. Only these plain
+ * public site - they show NPWP numbers and signatures. Only these plain
  * facts (numbers, dates, issuing authority) are shown, as badges/text.
  *
- * NOTE — verify before publishing: the leadership names below were OCR'd
+ * NOTE - verify before publishing: the leadership names below were OCR'd
  * from a scanned government decree (page 15). "Dedy Setiawan" (Direktur
- * Utama) appeared there as "CEDI SETIAWAN", almost certainly an OCR error —
+ * Utama) appeared there as "CEDI SETIAWAN", almost certainly an OCR error -
  * double-check spelling of all four names against the original document.
  */
 

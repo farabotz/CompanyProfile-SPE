@@ -30,8 +30,8 @@ export async function generateMetadata({
 
   const dict = await getDictionary(locale);
   return {
-    title: {
-      default: `${dict.common.site.name} — ${dict.common.site.titleSuffix}`,
+      title: {
+      default: `${dict.common.site.name} - ${dict.common.site.titleSuffix}`,
       template: `%s | ${dict.common.site.titleSuffix}`,
     },
     description: dict.common.site.defaultDescription,

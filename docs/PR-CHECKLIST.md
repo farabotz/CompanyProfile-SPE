@@ -1,10 +1,10 @@
-Phase 3 — PR Checklist
+Phase 3 - PR Checklist
 
 Before merging to `main`:
 
-- [ ] Run `npm run lint` locally — no lint errors.
-- [ ] Run `npx tsc --noEmit` — no type errors.
-- [ ] Run `npm run build` — static export succeeds and `out/` is generated.
+- [ ] Run `npm run lint` locally - no lint errors.
+- [ ] Run `npx tsc --noEmit` - no type errors.
+- [ ] Run `npm run build` - static export succeeds and `out/` is generated.
 - [ ] Manual QA: browse `/id` and `/en` for Home, About, Products, Gallery, Contact.
 - [ ] Verify `Lightbox` navigation and keyboard controls work.
 - [ ] Verify `ContactForm` opens the mail client with correct recipient and fields.

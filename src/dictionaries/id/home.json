@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Beranda",
-    "description": "PT Sarana Piranti Energi (SPE) — mitra terpercaya industri Minyak dan Gas Bumi Indonesia, bergerak di bidang niaga dan pengelolaan Kondensat, LPG, dan CNG."
+    "description": "PT Sarana Piranti Energi (SPE) - mitra terpercaya industri Minyak dan Gas Bumi Indonesia, bergerak di bidang niaga dan pengelolaan Kondensat, LPG, dan CNG."
   },
   "pageTitle": "Beranda",
   "hero": {
@@ -12,7 +12,7 @@
   },
   "aboutSnippet": {
     "heading": "Tentang Kami",
-    "text": "Didirikan pada awal 2023, PT Sarana Piranti Energi (SPE) menggabungkan keahlian teknologi dan jaringan dari PT Step Point Indonesia dengan pengalaman panjang praktisi industri gas — mulai dari teknik, penjualan, hingga investasi. Kami kini terjun langsung dalam penjualan, produksi, dan pengembangan di sektor minyak dan gas bumi.",
+    "text": "Didirikan pada awal 2023, PT Sarana Piranti Energi (SPE) menggabungkan keahlian teknologi dan jaringan dari PT Step Point Indonesia dengan pengalaman panjang praktisi industri gas - mulai dari teknik, penjualan, hingga investasi. Kami kini terjun langsung dalam penjualan, produksi, dan pengembangan di sektor minyak dan gas bumi.",
     "linkLabel": "Selengkapnya"
   },
   "visionMission": {
@@ -28,23 +28,23 @@
       {
         "key": "condensate",
         "title": "Kondensat",
-        "description": "Cairan hidrokarbon bernilai tinggi dari proses produksi gas alam — bahan baku petrokimia, bahan bakar, dan pelarut industri."
+        "description": "Cairan hidrokarbon bernilai tinggi dari proses produksi gas alam - bahan baku petrokimia, bahan bakar, dan pelarut industri."
       },
       {
         "key": "lpg",
         "title": "LPG",
-        "description": "Liquefied Petroleum Gas: Butane & Propane hasil distilasi splitter LPG — energi bersih untuk rumah tangga dan industri (dalam tahap pengembangan)."
+        "description": "Liquefied Petroleum Gas: Butane & Propane hasil distilasi splitter LPG - energi bersih untuk rumah tangga dan industri (dalam tahap pengembangan)."
       },
       {
         "key": "cng",
         "title": "CNG",
-        "description": "Compressed Natural Gas: alternatif bahan bakar ramah lingkungan — fasilitas pengolahan CNG sedang direncanakan untuk masa depan."
+        "description": "Compressed Natural Gas: alternatif bahan bakar ramah lingkungan - fasilitas pengolahan CNG sedang direncanakan untuk masa depan."
       }
     ]
   },
   "processTeaser": {
     "heading": "Rantai Bisnis Migas Kami",
-    "body": "Dari eksplorasi gas hingga konsumen akhir — SPE hadir di setiap tahap rantai nilai industri minyak dan gas bumi.",
+    "body": "Dari eksplorasi gas hingga konsumen akhir - SPE hadir di setiap tahap rantai nilai industri minyak dan gas bumi.",
     "linkLabel": "Lihat Detail Produk & Layanan"
   },
   "trustBadges": {
