@@ -12,25 +12,10 @@ interface ProductsOverviewProps {
   items: ProductItem[];
 }
 
-const productIcons: Record<string, React.ReactNode> = {
-  condensate: (
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
-      <circle cx="12" cy="9" r="2.5" stroke="currentColor" strokeWidth="1.8" />
-    </svg>
-  ),
-  lpg: (
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <path d="M12 2v4M8 3.5l2 2M16 3.5l-2 2" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
-      <rect x="5" y="10" width="14" height="10" rx="3" stroke="currentColor" strokeWidth="1.8" />
-      <path d="M9 14h6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
-    </svg>
-  ),
-  cng: (
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
-    </svg>
-  ),
+const productAccent: Record<string, string> = {
+  condensate: "from-sky-700 via-cyan-600 to-teal-500",
+  lpg: "from-amber-600 via-orange-500 to-rose-500",
+  cng: "from-emerald-700 via-green-600 to-lime-500",
 };
 
 export function ProductsOverview({ heading, items }: ProductsOverviewProps) {
@@ -40,15 +25,19 @@ export function ProductsOverview({ heading, items }: ProductsOverviewProps) {
         <h2 className="font-heading text-3xl font-bold text-brand-teal-dark sm:text-4xl">{heading}</h2>
       </div>
       <div className="mt-12 grid gap-6 sm:grid-cols-3">
-        {items.map((item) => (
-          <Card key={item.key} className="p-8 hover:shadow-md transition-shadow">
-            <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-brand-orange/10 text-brand-orange">
-              {productIcons[item.key]}
-            </div>
-            <h3 className="font-heading text-xl font-bold text-brand-teal-dark">{item.title}</h3>
-            <p className="mt-3 text-sm leading-relaxed text-neutral-600">{item.description}</p>
-          </Card>
-        ))}
+        {items.map((item) => {
+          const accent = productAccent[item.key] ?? "from-slate-700 via-slate-600 to-slate-500";
+
+          return (
+            <Card
+              key={item.key}
+              className="group rounded-[20px] border border-slate-200/80 bg-white p-7 sm:p-8 shadow-[0_20px_60px_-24px_rgba(15,23,42,0.25)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_28px_70px_-24px_rgba(15,23,42,0.32)]"
+            >
+              <h3 className="font-heading text-xl font-bold text-brand-teal-dark">{item.title}</h3>
+              <p className="mt-4 text-sm leading-7 text-neutral-600">{item.description}</p>
+            </Card>
+          );
+        })}
       </div>
     </Section>
   );
