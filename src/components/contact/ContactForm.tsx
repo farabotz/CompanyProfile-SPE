@@ -45,6 +45,7 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 export function ContactForm({ dict }: ContactFormProps) {
   const [form, setForm] = useState<FormState>({ name: "", email: "", subject: "", message: "" });
   const [errors, setErrors] = useState<FormErrors>({});
+  const [copiedEmail, setCopiedEmail] = useState(false);
 
   function validate(): FormErrors {
     const e: FormErrors = {};
@@ -59,7 +60,6 @@ export function ContactForm({ dict }: ContactFormProps) {
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
-    // Clear error on change
     if (errors[name as keyof FormErrors]) {
       setErrors((prev) => ({ ...prev, [name]: undefined }));
     }
@@ -80,21 +80,41 @@ export function ContactForm({ dict }: ContactFormProps) {
     window.location.href = `mailto:${dict.recipientEmail}?subject=${subject}&body=${body}`;
   }
 
+  function copyEmailToClipboard() {
+    navigator.clipboard.writeText(dict.recipientEmail);
+    setCopiedEmail(true);
+    setTimeout(() => setCopiedEmail(false), 2500);
+  }
+
   const inputBase =
-    "mt-1.5 block w-full rounded-lg border px-4 py-2.5 text-sm text-neutral-800 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-orange/50";
-  const inputOk = "border-black/15 bg-white focus:border-brand-orange";
-  const inputErr = "border-red-400 bg-red-50 focus:border-red-400";
+    "mt-1.5 block w-full rounded-xl border px-4 py-3 text-sm text-neutral-800 transition-all duration-200 focus:outline-hidden focus:ring-2 focus:ring-brand-orange/40";
+  const inputOk = "border-neutral-200 bg-white focus:border-brand-orange";
+  const inputErr = "border-red-400 bg-red-50/50 focus:border-red-400";
 
   return (
-    <div className="rounded-2xl border border-black/5 bg-white p-8 shadow-sm">
-      <h2 className="font-heading text-2xl font-bold text-brand-teal-dark">{dict.heading}</h2>
+    <div className="rounded-2xl border border-neutral-200/80 bg-white p-7 sm:p-9 shadow-xs">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <h2 className="font-heading text-2xl font-bold text-brand-teal-dark">{dict.heading}</h2>
+
+        {/* Quick copy email pill */}
+        <button
+          type="button"
+          onClick={copyEmailToClipboard}
+          className="inline-flex items-center gap-1.5 rounded-full bg-neutral-100 px-3.5 py-1.5 text-xs font-semibold text-neutral-700 hover:bg-brand-orange/10 hover:text-brand-orange-dark transition-all self-start sm:self-auto"
+        >
+          <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5" />
+          </svg>
+          {copiedEmail ? "Tersalin!" : dict.recipientEmail}
+        </button>
+      </div>
 
       {/* Notice */}
-      <div className="mt-4 flex items-start gap-3 rounded-lg bg-brand-teal/5 px-4 py-3">
+      <div className="mt-4 flex items-start gap-3 rounded-xl bg-brand-teal/5 border border-brand-teal/10 px-4 py-3">
         <svg className="mt-0.5 shrink-0 text-brand-teal-dark" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <path d="M12 16v-4M12 8h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
         </svg>
-        <p className="text-sm text-brand-teal-dark">{dict.notice}</p>
+        <p className="text-sm text-brand-teal-dark leading-relaxed">{dict.notice}</p>
       </div>
 
       <form onSubmit={handleSubmit} noValidate className="mt-6 space-y-5">
@@ -116,7 +136,7 @@ export function ContactForm({ dict }: ContactFormProps) {
             aria-describedby={errors.name ? "contact-name-error" : undefined}
           />
           {errors.name && (
-            <p id="contact-name-error" className="mt-1 text-xs text-red-600">{errors.name}</p>
+            <p id="contact-name-error" className="mt-1.5 text-xs text-red-600 font-medium">{errors.name}</p>
           )}
         </div>
 
@@ -138,7 +158,7 @@ export function ContactForm({ dict }: ContactFormProps) {
             aria-describedby={errors.email ? "contact-email-error" : undefined}
           />
           {errors.email && (
-            <p id="contact-email-error" className="mt-1 text-xs text-red-600">{errors.email}</p>
+            <p id="contact-email-error" className="mt-1.5 text-xs text-red-600 font-medium">{errors.email}</p>
           )}
         </div>
 
@@ -159,7 +179,7 @@ export function ContactForm({ dict }: ContactFormProps) {
             aria-describedby={errors.subject ? "contact-subject-error" : undefined}
           />
           {errors.subject && (
-            <p id="contact-subject-error" className="mt-1 text-xs text-red-600">{errors.subject}</p>
+            <p id="contact-subject-error" className="mt-1.5 text-xs text-red-600 font-medium">{errors.subject}</p>
           )}
         </div>
 
@@ -180,13 +200,13 @@ export function ContactForm({ dict }: ContactFormProps) {
             aria-describedby={errors.message ? "contact-message-error" : undefined}
           />
           {errors.message && (
-            <p id="contact-message-error" className="mt-1 text-xs text-red-600">{errors.message}</p>
+            <p id="contact-message-error" className="mt-1.5 text-xs text-red-600 font-medium">{errors.message}</p>
           )}
         </div>
 
         <button
           type="submit"
-          className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-brand-orange px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-orange-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-orange"
+          className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-brand-orange px-6 py-3.5 text-sm font-semibold text-white shadow-md transition-all duration-200 hover:bg-brand-orange-dark hover:shadow-lg active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-orange"
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 4l16 8-16 8V4z" fill="currentColor" />

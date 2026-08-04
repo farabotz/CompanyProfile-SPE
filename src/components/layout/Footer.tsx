@@ -19,26 +19,35 @@ export function Footer({ locale, common }: FooterProps) {
   ];
 
   return (
-    <footer className="border-t border-white/10 bg-brand-teal-dark text-white">
+    <footer className="border-t border-white/10 bg-brand-teal-dark text-white relative">
       <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-10 px-4 py-14 sm:px-6 lg:grid-cols-4 lg:px-8">
-        <div className="lg:col-span-2">
-          <Link href={`/${locale}`} className="flex items-center gap-2">
-            <Image src="/images/logo/logo-icon.png" alt={common.site.legalName} width={40} height={40} />
-            <span className="font-heading text-base font-bold leading-tight">
-              SARANA PIRANTI ENERGI
+        <div className="lg:col-span-2 space-y-4">
+          <Link href={`/${locale}`} className="flex items-center gap-3 group">
+            <Image
+              src="/images/logo/logo-icon.png"
+              alt={common.site.legalName}
+              width={40}
+              height={40}
+              className="transition-transform group-hover:scale-105"
+            />
+            <span className="font-heading text-base font-bold leading-tight tracking-wide text-white group-hover:text-brand-orange transition-colors">
+              PT SARANA PIRANTI ENERGI
             </span>
           </Link>
-          <p className="mt-4 max-w-sm text-sm text-white/70">{common.footer.tagline}</p>
+          <p className="max-w-sm text-sm text-white/75 leading-relaxed">{common.footer.tagline}</p>
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold uppercase tracking-wide text-white/50">
+          <h3 className="text-xs font-bold uppercase tracking-wider text-brand-orange-light">
             {common.footer.quickLinksHeading}
           </h3>
-          <ul className="mt-4 space-y-2">
+          <ul className="mt-4 space-y-2.5">
             {navItems.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="text-sm text-white/80 hover:text-white">
+                <Link
+                  href={item.href}
+                  className="text-sm text-white/75 hover:text-white hover:translate-x-1 inline-block transition-all"
+                >
                   {item.label}
                 </Link>
               </li>
@@ -47,25 +56,32 @@ export function Footer({ locale, common }: FooterProps) {
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold uppercase tracking-wide text-white/50">
+          <h3 className="text-xs font-bold uppercase tracking-wider text-brand-orange-light">
             {common.footer.addressHeading}
           </h3>
-          <div className="mt-4 space-y-4 text-sm text-white/80">
+          <div className="mt-4 space-y-4 text-sm text-white/75">
             <div>
-              <p className="font-medium text-white">{common.footer.headOfficeLabel}</p>
-              <p>{locations.headOffice.addressLines.join(", ")}</p>
+              <p className="font-semibold text-white">{common.footer.headOfficeLabel}</p>
+              <p className="mt-0.5 leading-relaxed">{locations.headOffice.addressLines.join(", ")}</p>
             </div>
             <div>
-              <p className="font-medium text-white">{common.footer.storageLabel}</p>
-              <p>{locations.storage.addressLines.join(", ")}</p>
+              <p className="font-semibold text-white">{common.footer.storageLabel}</p>
+              <p className="mt-0.5 leading-relaxed">{locations.storage.addressLines.join(", ")}</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="border-t border-white/10">
-        <div className="mx-auto w-full max-w-6xl px-4 py-5 text-xs text-white/50 sm:px-6 lg:px-8">
-          &copy; {new Date().getFullYear()} {common.site.legalName}. {common.footer.rights}
+      <div className="border-t border-white/10 bg-black/20">
+        <div className="mx-auto w-full max-w-6xl px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/50 sm:px-6 lg:px-8">
+          <div>
+            &copy; {new Date().getFullYear()} {common.site.legalName}. {common.footer.rights}
+          </div>
+          <div className="flex items-center gap-4 text-white/40">
+            <span>Izin Usaha Niaga Terbatas ESDM</span>
+            <span>•</span>
+            <span>BPH Migas</span>
+          </div>
         </div>
       </div>
     </footer>

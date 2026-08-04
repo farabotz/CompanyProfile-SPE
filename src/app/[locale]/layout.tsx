@@ -5,6 +5,7 @@ import { locales, isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { WhatsAppWidget } from "@/components/shared/WhatsAppWidget";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -29,12 +30,38 @@ export async function generateMetadata({
   if (!isLocale(locale)) return {};
 
   const dict = await getDictionary(locale);
+  const title = `${dict.common.site.name} - ${dict.common.site.titleSuffix}`;
+  const description = dict.common.site.defaultDescription;
+
   return {
-      title: {
-      default: `${dict.common.site.name} - ${dict.common.site.titleSuffix}`,
+    title: {
+      default: title,
       template: `%s | ${dict.common.site.titleSuffix}`,
     },
-    description: dict.common.site.defaultDescription,
+    description: description,
+    keywords: [
+      "Sarana Piranti Energi",
+      "BBM Industri",
+      "Solar Industri B35",
+      "Solar Industri B40",
+      "Distributor BBM Resmi",
+      "Izin Usaha Niaga Terbatas",
+      "ESDM",
+      "BPH Migas",
+    ],
+    openGraph: {
+      title: title,
+      description: description,
+      siteName: dict.common.site.name,
+      locale: locale === "id" ? "id_ID" : "en_US",
+      type: "website",
+    },
+    alternates: {
+      languages: {
+        id: "/id",
+        en: "/en",
+      },
+    },
   };
 }
 
@@ -50,12 +77,43 @@ export default async function LocaleLayout({
 
   const dict = await getDictionary(locale as Locale);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "PT Sarana Piranti Energi",
+    alternateName: "SPE",
+    url: "https://saranapirantienergi.co.id",
+    logo: "https://saranapirantienergi.co.id/images/logo/logo-icon.png",
+    description: dict.common.site.defaultDescription,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Kebayoran Baru",
+      addressLocality: "Jakarta Selatan",
+      addressRegion: "DKI Jakarta",
+      addressCountry: "ID",
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+62-811-1979-8080",
+      contactType: "customer service",
+      areaServed: "ID",
+      availableLanguage: ["Indonesian", "English"],
+    },
+  };
+
   return (
     <html lang={locale} className={`${inter.variable} ${jakarta.variable} h-full antialiased`}>
-      <body className="flex min-h-full flex-col">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
+      <body className="flex min-h-full flex-col font-sans">
         <Header locale={locale as Locale} common={dict.common} />
         <main className="flex-1">{children}</main>
         <Footer locale={locale as Locale} common={dict.common} />
+        <WhatsAppWidget locale={locale} />
       </body>
     </html>
   );

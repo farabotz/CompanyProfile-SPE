@@ -30,13 +30,13 @@ export function PartnersStrip({ heading, supplierLabel, buyerLabel, disclaimer, 
             {suppliers.map((partner) => (
               <div
                 key={partner.id}
-                className="flex h-28 w-48 items-center justify-center overflow-hidden rounded-xl border border-black/5 bg-neutral-50 p-4 shadow-sm"
+                className="flex h-52 w-80 items-center justify-center p-2"
               >
                 <Image
                   src={partner.logoSrc}
                   alt={partner.name}
-                  width={160}
-                  height={80}
+                  width={320}
+                  height={208}
                   className="h-full w-full object-contain"
                 />
               </div>
@@ -56,13 +56,13 @@ export function PartnersStrip({ heading, supplierLabel, buyerLabel, disclaimer, 
             {buyers.map((partner) => (
               <div
                 key={partner.id}
-                className="flex h-28 w-48 items-center justify-center overflow-hidden rounded-xl border border-black/5 bg-neutral-50 p-4 shadow-sm"
+                className="flex h-36 w-60 items-center justify-center p-2"
               >
                 <Image
                   src={partner.logoSrc}
                   alt={partner.name}
-                  width={160}
-                  height={80}
+                  width={240}
+                  height={144}
                   className="h-full w-full object-contain"
                 />
               </div>

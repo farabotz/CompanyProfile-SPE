@@ -56,61 +56,64 @@ export function Lightbox({ images, captions, initialIndex, onClose, dict }: Ligh
       role="dialog"
       aria-modal="true"
       aria-label={dict.imageOf}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/92 backdrop-blur-md p-4 animate-in fade-in duration-200"
       onClick={onClose}
     >
-      {/* Inner container - stop click propagation so clicking the image doesn't close */}
+      {/* Inner container */}
       <div
-        className="relative flex max-h-full max-w-5xl w-full flex-col items-center gap-4"
+        className="relative flex max-h-full max-w-5xl w-full flex-col items-center gap-4 animate-in zoom-in-95 duration-200"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close button */}
         <button
           onClick={onClose}
           aria-label={dict.close}
-          className="absolute -top-3 -right-3 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
+          className="absolute -top-12 right-0 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 active:scale-95 transition-all"
         >
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
           </svg>
         </button>
 
-        {/* Image */}
-        <div className="relative w-full overflow-hidden rounded-xl" style={{ maxHeight: "75vh" }}>
+        {/* Image Display */}
+        <div className="relative w-full overflow-hidden rounded-2xl bg-black/40 border border-white/10 shadow-2xl flex items-center justify-center min-h-[50vh]" style={{ maxHeight: "75vh" }}>
           <Image
+            key={img.src}
             src={img.src}
             alt={caption}
             width={1200}
             height={800}
-            className="h-full w-full object-contain"
+            className="h-full w-full object-contain transition-all duration-300 animate-in fade-in"
             style={{ maxHeight: "75vh" }}
           />
         </div>
 
         {/* Caption + navigation */}
-        <div className="flex w-full items-center justify-between gap-4">
+        <div className="flex w-full items-center justify-between gap-4 px-2">
           <button
             onClick={goPrev}
             aria-label={dict.prev}
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
+            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 active:scale-95 transition-all"
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </button>
 
           <div className="flex flex-col items-center gap-1 text-center">
-            <p className="text-sm text-white/90">{caption}</p>
-            <p className="text-xs text-white/50">{current + 1} / {images.length}</p>
+            <p className="text-base font-medium text-white/95 leading-snug">{caption}</p>
+            <span className="inline-flex items-center rounded-full bg-white/10 px-3 py-0.5 text-xs text-white/70">
+              {current + 1} / {images.length}
+            </span>
           </div>
 
           <button
             onClick={goNext}
             aria-label={dict.next}
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
+            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 active:scale-95 transition-all"
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </button>
         </div>
