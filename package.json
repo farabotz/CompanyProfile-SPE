@@ -7,9 +7,7 @@
     "dev": "next dev --webpack",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "taste:preflight": "node scripts/taste-preflight.js",
-    "taste:fix-emdash": "node scripts/replace-emdash.js"
+    "lint": "eslint"
   },
   "dependencies": {
     "next": "16.2.10",
